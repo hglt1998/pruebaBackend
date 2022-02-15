@@ -2,7 +2,7 @@ import { connect } from "../database";
 
 export const getTasks = async (req, res) => {
   const connection = await connect();
-  const [rows] = await connection.execute("SELECT * FROM tasks");
+  const [rows] = await connection.execute("SELECT * FROM compositor");
   res.json(rows);
 };
 
@@ -57,8 +57,14 @@ export const getTasksCount = async (req, res) => {
   res.json(rows[0]["COUNT(*)"]);
 };
 
-export const getCompositores = async (req, res) => {
+export const getComposers = async (req, res) => {
   const connection = await connect();
   const [rows] = await connection.execute("SELECT * FROM compositor");
   res.json(rows);
 }
+
+export const getThemes = async (req, res) => {
+  const connection = await connect();
+  const [rows] = await connection.execute("SELECT * FROM composicion");
+  res.json(rows);
+};

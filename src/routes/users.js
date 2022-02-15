@@ -5,7 +5,7 @@ import {
   saveTask,
   getTask,
   updateTask,
-  getTasksCount, getCompositores,
+  getTasksCount, getComposers, getThemes,
 } from "../controllers/tasks";
 
 const router = Router();
@@ -92,6 +92,8 @@ router.put("/tasks/:id", updateTask);
  *    summary: get all composers
  *    tags: [Estadisticas]
  */
-router.get("/tasks/compositores", getCompositores);
+router.get("/tasks/compositores", getComposers);
+
+router.get("/composiciones", getThemes);
 
 export default router;
