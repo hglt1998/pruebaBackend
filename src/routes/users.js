@@ -94,6 +94,6 @@ router.put("/tasks/:id", updateTask);
  */
 router.get("/tasks/compositores", getComposers);
 
-router.get("/composiciones", getThemes);
+router.get("/composicion", getThemes);
 
 export default router;
