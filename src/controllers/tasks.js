@@ -56,3 +56,9 @@ export const getTasksCount = async (req, res) => {
   const [rows] = await connection.execute("SELECT COUNT(*) FROM tasks");
   res.json(rows[0]["COUNT(*)"]);
 };
+
+export const getCompositores = async (req, res) => {
+  const connection = await connect();
+  const [rows] = await connection.execute("SELECT * FROM compositor");
+  res.json(rows);
+}

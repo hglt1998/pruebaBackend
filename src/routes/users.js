@@ -5,7 +5,7 @@ import {
   saveTask,
   getTask,
   updateTask,
-  getTasksCount,
+  getTasksCount, getCompositores,
 } from "../controllers/tasks";
 
 const router = Router();
@@ -84,5 +84,7 @@ router.delete("/tasks/:id", deleteTask);
  *    tags: [Tasks]
  */
 router.put("/tasks/:id", updateTask);
+
+router.get("/compositores", getCompositores);
 
 export default router;
