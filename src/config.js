@@ -5,7 +5,7 @@ export const config = {
   host: process.env.DB_HOST || "localhost:3306",
   user: process.env.DB_USER || "hglt1998",
   password: process.env.DB_PASSWORD || "Password123._",
-  database: process.env.DB_DATABASE || "stats",
+  database: process.env.DB_DATABASE || "taskdb",
 };
 
 // export const config = {
