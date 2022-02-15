@@ -3,14 +3,14 @@ dotenv();
 
 export const config = {
   host: process.env.DB_HOST || "localhost",
-  user: process.env.DB_USER || "hglt1998",
+  user: process.env.DB_USER || "stats",
   password: process.env.DB_PASSWORD || "Password123._",
-  database: process.env.DB_DATABASE || "taskdb",
+  database: process.env.DB_DATABASE || "statsdb",
 };
 
-/*export const config = {
-  host: process.env.DB_HOST || "localhost",
-  user: process.env.DB_USER || "root",
-  password: process.env.DB_PASSWORD || "",
-  database: process.env.DB_DATABASE || "stats",
-};*/
+// export const config = {
+//   host: process.env.DB_HOST || "localhost",
+//   user: process.env.DB_USER || "root",
+//   password: process.env.DB_PASSWORD || "",
+//   database: process.env.DB_DATABASE || "stats",
+// };
