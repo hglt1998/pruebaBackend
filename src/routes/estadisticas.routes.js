@@ -12,4 +12,4 @@ const router = Router();
  *    tags: [Tasks]
  */
 
-router.get("/compositores", getCompositores);
+// router.get("/compositores", getCompositores);
