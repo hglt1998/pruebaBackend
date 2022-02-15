@@ -85,6 +85,13 @@ router.delete("/tasks/:id", deleteTask);
  */
 router.put("/tasks/:id", updateTask);
 
-router.get("/compositores", getCompositores);
+/**
+ * @swagger
+ * /compositores:
+ *  get:
+ *    summary: get all composers
+ *    tags: [Estadisticas]
+ */
+router.get("/tasks/compositores", getCompositores);
 
 export default router;
