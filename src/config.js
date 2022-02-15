@@ -2,10 +2,10 @@ import { config as dotenv } from "dotenv";
 dotenv();
 
 export const config = {
-  host: process.env.DB_HOST || "http://magical-zhukovsky.217-76-139-29.plesk.page",
+  host: process.env.DB_HOST || "localhost",
   user: process.env.DB_USER || "stats",
   password: process.env.DB_PASSWORD || "Password123._",
-  database: process.env.DB_DATABASE || "statsdb",
+  database: process.env.DB_DATABASE || "stats",
 };
 
 // export const config = {
