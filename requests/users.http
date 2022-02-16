@@ -1,5 +1,5 @@
-@api = http://localhost:3000/tasks
-
+@api = http://localhost:1025/compositores
+//@api = http://magical-zhukovsky.217-76-139-29.plesk.page:1025/tasks
 
 ### Get all tasks
 {{api}}

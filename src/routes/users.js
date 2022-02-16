@@ -92,8 +92,9 @@ router.put("/tasks/:id", updateTask);
  *    summary: get all composers
  *    tags: [Estadisticas]
  */
-router.get("/tasks/compositores", getComposers);
+router.get("/compositores", getComposers);
 
-router.get("/composicion", getThemes);
+
+router.get("/composiciones", getThemes);
 
 export default router;
