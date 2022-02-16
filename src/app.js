@@ -13,7 +13,9 @@ const specs = swaggerJSDoc(options);
 
 app.set("port", 1025);
 
-app.use(cors());
+app.use(cors({
+    origin: '*'
+}));
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
